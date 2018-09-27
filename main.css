@@ -1,0 +1,120 @@
+/*
+    * Created by Rakesh Muthyala
+    * Email: rakesh.muthyala.15@gmail.com
+    * Created on: Sept 26, 2018.
+*/
+
+body{
+    background-color: blanchedalmond;
+    margin: 25px 5px 25px 25px;
+    position: relative;
+    text-align: center;
+}
+
+/*
+    * Getting the images from sprite.
+*/
+
+#stan {
+    background: url(characters-sprite.png) -4px -4px; 
+    width: 94px;
+    height: 144px;
+}
+
+#kyle {
+    background: url(characters-sprite.png) -108px -4px; 
+    width: 94px;
+    height: 144px;  
+}
+
+#kenny {
+    background: url(characters-sprite.png) -211px -4px; 
+    width: 94px;
+    height: 144px;
+}
+
+#cartman {
+    background: url(characters-sprite.png) -313px -5px; 
+    width: 94px;
+    height: 144px;
+}
+
+#wendy {
+    background: url(characters-sprite.png) -416px -4px; 
+    width: 94px;
+    height: 144px;
+}
+
+#ike {
+    background: url(characters-sprite.png) -518px -4px; 
+    width: 94px;
+    height: 144px;
+}
+
+#tweak{
+    background: url(characters-sprite.png) -622px -3px; 
+    width: 94px;
+    height: 144px;
+}
+
+figure {
+    border: 0.25px solid gray;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 40px 10px 40px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+
+
+}
+
+img {
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+}
+
+
+.initList {
+    cursor: pointer;
+}
+
+/*
+    * As CSS selectors will not allow to elements that the before a selector, the best CSS can do is select parent class and apply style to it and not the hovered element.
+    * JS can be used to refine the selection process by looping through all the children and applying style to those that doen't match the hovered element id.
+*/
+#peopleList:hover >  .initList:not(:hover){
+    background-color: lightgrey;
+    opacity: 0.5;
+} 
+button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px 5px 25px 0px;
+    width: 200px;
+    padding: 20px;
+    height: 50px;
+    
+}
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid black;
+}

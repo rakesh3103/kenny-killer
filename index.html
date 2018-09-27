@@ -1,0 +1,38 @@
+<!--
+    Created by Rakesh Muthyala
+    Email: rakesh.muthyala.15@gmail.com
+    Created on: Sept 26, 2018.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+            <!--Loading BootStrap for responsive design-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="main.css">
+            <title>Who killed Kenny?</title>
+            <link rel="shortcut icon" type="image/x-icon" href="title_ico.png" />
+            <meta name="author" content="Rakesh Muthyala">
+    </head>
+    <body>
+        <!--Headings Cotainer-->
+        <div  class="container">
+            <h1>Who killed Kenny?</h1>
+            <h3 id="contextText"></h3>
+        </div>
+        <!--Displaying inital list of people-->
+        <div id = "peopleList" class='container-fluid row'>
+        </div>
+        <hr>
+        <!--Displaying people chosen as suspects-->
+        <div id = "suspectList" class='container-fluid row'>
+        </div>
+        <!--Buttons Container-->
+        <div class="container-fluid row">
+            <button type="button" class="btn btn-danger" onclick = "initializeWithData()">Reset</button>
+            <button type="button" class="btn btn-success">Save</button>
+        </div>
+            
+            
+        <script src="kennyKiller.js"> </script>
+    </body>
+</html>
